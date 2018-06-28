@@ -14,25 +14,62 @@
         crossorigin="anonymous">
     <!-- Place favicon.ico in the root directory -->
     <style>
+        body{
+            overflow: hidden;
+            background-color: #DDE3EF;
+        }
+
         main {
+
+            position:absolute;
+           
+            background-color: none;
+            top:-150px;
+            left:3px;
             display: flex;
             width: 100%;
             height: 100vh;
             flex-direction: column;
             justify-content: center;
             text-align: center;
+            font-weight: bolder;
         }
         span{
             color: #51C878;
+        }
+
+        img{
+            margin: 30px auto;
+            display: block;
+
+            height: 100px;
+            width: 100px;
+
+            border-radius: 200px 200px 200px 200px;
+
+        }
+
+        p{
+            font-size: 20px;
+            font-family: 'Arial';
         }
 
     </style>
 </head>
 
 <body>
+    <img src="portada-merida.jpg" alt="montaña">
     <main>
-        <h1>Hola, Soy <span>Juan Plaza!</span> </h1>
+        <h1>Hola, Soy <span>Juan Plaza</span> </h1>
+        <p> Tengo 23 años</p>
+
+        <p> Vivo en Bogotá - Colombia</p>
     </main>
+
+    <div>
+        
+
+    </div>
 </body>
 
 </html>
