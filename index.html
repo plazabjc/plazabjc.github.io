@@ -1,39 +1,140 @@
 <!doctype html>
-<html lang="">
+<html class="no-js" lang="">
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Juan Plaza</title>
     <meta name="description" content="">
-    <link rel="stylesheet" href="effects1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <aside>
-        <nav>
-            <ul>
-                <li>Opcion 1</li>
-                <li>Opcion 2</li>
-                <li>Opcion 3</li>
-                <li>Opcion 4</li>
-                <li>Opcion 5</li>
-            </ul>
-        </nav>
-    </aside>
-
-    <main>
+    <div class="menu-floating-button">
+        <i class="fas fa-bars fa-lg"></i>
+    </div>
+    <header id="bio">
         <div>
-            <img src="portada-merida.jpg" alt="montaña">
+            <img class="profile" src="img/profile.jpg" alt="foto de perfil" />
+            <div class="title-wrapper">
+                <h1>Juan Plaza</h1>
+                <h2 class="primary-red">Desarrollador Web</h2>
+            </div>
+            <div class="bio-content">
+                <p>
+                    Soy un desarrollador web auto-didacta con experiencia en HTML, CSS, diseño web responsive y
+                    animaciones con
+                    CSS3.
+                    Estoy expandiendo mis conocimientos en tecnologías web con NextU y otras plataformas de
+                    aprendizaje electrónico. Soy una persona altamente motivada, me gusta prestar gran atención al
+                    detalle
+                    y me
+                    gustaría entregar productos web de calidad. Tengo noticiones de levantamiento de requisitos para
+                    proyectos
+                    pequeños.
+                </p>
+                <p>
+                    Estoy buscando desarrollar mis habilidades en desarrollo web y aseguramiento de calidad para crear
+                    mejores
+                    aplicaciones y experiencias web.
+                </p>
+            </div>
         </div>
-        
-        <div class="bannergra">
-            <h1>Hola, Soy <span>Juan Plaza</span> </h1>
-            <p> Tengo 23 años</p>
-            <p> Vivo en Bogotá - Colombia</p>
+    </header>
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="container habilidades-grid">
+            <div class="col-3">
+                <div class="habilidad">
+                    <i class="fas fa-code"></i>
+                    <h5>HTML</h5>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="habilidad">
+                    <i class="fab fa-css3"></i>
+                    <div class="progress"></div>
+                    <h5>CSS</h5>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="habilidad">
+                    <i class="fas fa-search"></i>
+                    <h5>SEO</h5>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="habilidad" id="responsive">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h5>Diseño Responsive</h5>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="habilidad" id="animaciones">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <h5>Animaciones CSS3</h5>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="habilidad">
+                    <i class="fas fa-user-astronaut"></i>
+                    <h5>UX/UI</h5>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="habilidad">
+                    <i class="fab fa-js"></i>
+                    <h5>JavaScript</h5>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+    <section id="acerca-de">
+        <h2>Acerca de mi</h2>
+        <div class="about-content">
+            <img src="img/about.jpg" alt="" class="about-content-img" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form class="form">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea type="text" name="message" id="message" rows="6"></textarea>
+            </div>
+            <div class="form-group">
+                <button>Enviar  <i class="fas fa-arrow-alt-circle-right fa-lg"></i></button>
+            </div>
+        </form>
+        <a href="#" id="download-cv"><i class="fas fa-file-download"></i> Descargar curriculum</a>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <ul>
+                <li><a href="https://github.com/plazabjc"><i class="fab fa-github-square fa-3x"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin fa-3x"></i></a></li>
+                <li><a href="mailto:plazabjc@gmail.com"><i class="fas fa-envelope fa-3x"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
+        crossorigin="anonymous">
 
 </body>
 
