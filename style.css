@@ -12,6 +12,7 @@ body {
 }
 
 
+
 body {
     background: #F5F4F8;
     color: #21282c;
@@ -26,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     font-size: 40px;
+}
+
+.primary-red > h2{
+    right: 65%;
 }
 
 header {
@@ -139,11 +144,6 @@ nav.menu > ul > li:nth-of-type(3) a {
     color: #29c0e6;\
 }
 
-@media screen and (max-width: 480px){
-    nav.menu {
-        display: none;
-    }
-}
 
 
 /* HEADER */
@@ -156,7 +156,7 @@ header .title-wrapper {
 
 header h1 {
     display: inline-block;
-    font-size: 52px;
+    font-size: 50px;          
     margin-bottom: 0px;
     text-align: right;
     z-index: 30;
@@ -310,6 +310,27 @@ header  .bio-content {
 }
 
 
+@media screen and (max-width: 480px){
+    nav.menu {
+        display: none;
+    }
+
+    .about-content-img {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        float: center;
+        margin: 0px 30px 20px 20px;
+    }
+
+    .activities-img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    float: center;
+    margin: 5px 20px 20px 30px;
+    }
+}
 /* CONTACTO */
 
 #contacto {
@@ -411,9 +432,28 @@ footer .container > ul > li > a {
 }
 
 @media screen and (max-width: 480px){
+    nav.menu {
+        display: none;
+    }
+
+    .about-content-img {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        float: center;
+        margin: 0px 30px 20px 20px;
+    }
+
+    .activities-img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    float: center;
+    margin: 5px 20px 20px 30px;
+    }
 
     .particle-wraper{
-        height: 50vh;
+        height: 30vh;
     }
 
     .habilidad i.fa,
@@ -438,6 +478,6 @@ footer .container > ul > li > a {
 
 @media screen and (max-width: 600px){
     .particle-wraper{
-        height: 70vh;
+        height: 50vh;
     }
 }
