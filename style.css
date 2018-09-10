@@ -1,5 +1,6 @@
 /* BASE STYLES */
 
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
 body {
     width: 100%;
@@ -7,7 +8,14 @@ body {
     padding: 0;
     background: #F5F4F8;
     color: #21282c;
-    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    font-family: 'Oswald', 'Arial', 'Helvetica', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -99,6 +107,7 @@ header h1 {
     font-size: 52px;
     margin-bottom: 0px;
     text-align: right;
+    z-index: 30;
 }
 
 header h2 {
@@ -107,30 +116,51 @@ header h2 {
     letter-spacing: 0.03em;
     text-align: right;
     margin-bottom: 30px;
+    z-index: 30;
 }
 
 header .profile {
+    margin-top: 25px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     padding: 4px;
     border: 2px solid #21282c;
+    z-index: 300;
 }
 
 header  {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-header  > div {
+
+header .header-content {
     margin: 0 40px;
     text-align: center;
+    z-index: 30;
+    pointer-events: none;
+}
+.particle-wraper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+}
+
+#particle-canvas {
+    width: 100%;
+    height: 100%;
 }
 
 header  .bio-content {
+    font-size: 20px;
     margin: 0 15%;
+    text-align: center;
 }
 
 /* HABILIDADES */
@@ -179,7 +209,7 @@ header  .bio-content {
 
 .habilidad > h5 {
     font-size: 26px;
-    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    font-family: 'Oswald', 'Arial', 'Helvetica', sans-serif;
     text-transform: capitalize;
     font-weight: 300;
     margin: 20px auto;
@@ -190,6 +220,7 @@ header  .bio-content {
 /* ACERCA DE MI */
 
 #acerca-de {
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,6 +259,7 @@ header  .bio-content {
 
 #contacto > .form .form-group {
     margin: 25px 0;
+    font-size: 18px;
 }
 
 #contacto > .form label {
@@ -256,14 +288,15 @@ header  .bio-content {
 }
 
 #contacto > .form button {
-    
+    font-size: 18px;
     border: none;
     background: #eb105c;
     width: auto;
     font-weight: bold;
     color: #F5F4F8;
     padding: 10px 15px;
-    height: 32px;
+    height: 40px;
+    border-radius: 5%;
 }
 
 #download-cv {
@@ -281,7 +314,7 @@ header  .bio-content {
 footer {
     background: #21282c;
     color: #F5F4F8;
-    min-height: 100px;
+    min-height: 80px;
     width: 100%;
 }
 
