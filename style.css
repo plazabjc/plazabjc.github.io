@@ -21,6 +21,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Anton', 'Arial', 'Helvetica', sans-serif;
     letter-spacing: 0.05em;
+    text-align: center;
 }
 
 h2 {
@@ -37,6 +38,13 @@ section {
     width: 100%;
     margin: 0;
     min-height: 100vh;
+}
+
+/*utils*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /*
@@ -81,6 +89,7 @@ section {
 
 /* MENU */ 
 
+/* estilo de boton flotante 
 .menu-floating-button {
     position: fixed;
     top: 25px;
@@ -95,6 +104,47 @@ section {
     cursor: pointer;
     z-index: 100;
 }
+*/
+
+nav.menu {
+    z-index: 30;
+}
+
+nav.menu > ul {
+    padding: 0;
+    margin: 25px 25px;
+    text-align: right;
+    list-style: none;
+    font-family: 'Oswald', 'Arial', 'Helvetica', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav.menu > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+}
+
+nav.menu > ul > li a {
+    color: #21282c;
+    text-decoration: none;
+}
+
+nav.menu > ul > li:first-of-type a {
+    color: #eb105c;
+}
+
+nav.menu > ul > li:nth-of-type(3) a {
+    color: #29c0e6;\
+}
+
+@media screen and (max-width: 480px){
+    nav.menu {
+        display: none;
+    }
+}
+
 
 /* HEADER */
 
@@ -153,7 +203,7 @@ header .header-content {
     left: 0;
     margin: 0;
     width: 100%;
-    height: 60vh;
+    height: 65vh;
 }
 
 #particle-canvas {
@@ -228,26 +278,37 @@ header  .bio-content {
 #acerca-de {
     font-size: 20px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .about-content {
-    width: 75%;
-    max-width: 840px;
+    text-align: justify;
+    width: 85%;
+    max-width: 1000px;
 }
 
-.about-content img {
+.about-content-img {
     width: 50%;
+    max-width: 400px;
     height: auto;
     float: left;
-    margin: 20px 30px 20px 0px;
+    margin: -3px 30px 20px 30px;
 }
 
-.about-content > .about-content-text {
-    float: left;
+#activities-content{
+    text-align: justify;
 }
+
+.activities-img {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    float: right;
+    margin: 5px 30px 20px 30px;
+}
+
 
 /* CONTACTO */
 
@@ -377,6 +438,6 @@ footer .container > ul > li > a {
 
 @media screen and (max-width: 600px){
     .particle-wraper{
-        height: 40vh;
+        height: 70vh;
     }
 }
