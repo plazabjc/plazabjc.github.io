@@ -294,7 +294,7 @@ header  .bio-content {
     max-width: 400px;
     height: auto;
     float: left;
-    margin: -3px 30px 20px 30px;
+    margin: 13px 30px 20px 30px;
 }
 
 #activities-content{
@@ -306,7 +306,7 @@ header  .bio-content {
     max-width: 400px;
     height: auto;
     float: right;
-    margin: 5px 30px 20px 30px;
+    margin: 0px 30px 20px 30px;
 }
 
 
@@ -391,8 +391,7 @@ header  .bio-content {
     margin: 30px 0;
     font-size: 28px;
     font-weight: normal;
-    text-decoration: underline;
-    text-decoration-color: #29c0e6;
+    text-decoration: none;
     color: #eb105c;
     font-family: 'Anton', 'Arial', 'sans-serif';
 }
@@ -400,11 +399,19 @@ header  .bio-content {
 /* FOOTER */
 
 footer {
-    background: #21282c;
+    background: black;
     color: #F5F4F8;
     min-height: 80px;
     margin: 0;
     width: 100%;
+}
+
+footer p {
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    
 }
 
 footer a {
@@ -414,7 +421,7 @@ footer a {
 
 footer .container > ul {
     margin: 0;
-    padding: 20px;
+    padding: 0 20px;
     list-style: none;
     text-align: center;
 }
