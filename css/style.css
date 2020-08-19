@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@469&family=Raleway:wght@400&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
+/* TODO :: include css reset */
+body {
+	margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+/* Override UGG site */
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+.parallax-world-of-ugg {
+  position: relative;
+}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {
+  font-family:'Oswald', sans-serif;
+  font-size:54px;
+  letter-spacing: 10px;
+  text-transform: uppercase; 
+  color: white;
+  text-align: center;
+}
+
+#parallax-world-of-ugg h2 {
+  font-family: 'Oswald', cursive;
+  font-size:65px;
+  letter-spacing:10px;
+  text-align:center;
+  color:white;
+  text-transform:uppercase;
+  z-index:10;
+  border-bottom: 2px solid #FFFFFF;
+  border-bottom-color: rgba(255,255,255,0.25);
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+
+#parallax-world-of-ugg h3 {
+  color: black;
+  font-family: 'Oswald', cursive;
+  font-size:40px;
+  letter-spacing:5px;
+  text-align: center;
+  text-transform:uppercase;
+  z-index:10;
+  margin: 35px auto;
+  padding: 35px;
+}
+
+.title {
+  font-family: 'Oswald', cursive;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  z-index: 10;
+  text-align: center;
+  color: black;
+  margin: 60px;
+}
+
+
+.title-section {
+  left: 90px;
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  padding: 0 10px;
+  z-index: 10;
+  width: 31%;
+  margin: 110px 15px 15px 15px;
+}
+
+
+
+.title-section2 {
+  color: #A6A300;
+  padding: 0 10px;
+  color: #6A6363;
+  font-family: 'Oswald', cursive;
+  font-size:60px;
+  letter-spacing:5px;
+  top: 15px;
+  text-align: center;
+  text-transform:uppercase;
+  z-index:10;
+
+}
+
+
+#text-aboutme {
+  display: grid;
+  margin: 0;
+  padding: 15px;
+}
+
+#parallax-world-of-ugg p {
+  font-family:'Roboto', sans-serif;
+}
+
+.about-me, .about-me2 {
+  font-size: 1em;
+  color: white;
+  position: relative;
+  z-index: 10;
+  margin: 10px;
+  padding: 0;
+}
+#container-subtitle {
+  font-size: 22px;
+  color: #FFFFFF;
+  letter-spacing: 4px;
+  margin: 15px auto;
+}
+
+.about-special {
+  color: #6A6363;
+  margin: 0;
+  font-weight: 400;
+  float: left;
+  font-size: 48px;
+  line-height: 44px;
+  padding:10px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.letter-yellow {
+  color: #FFD658;
+}
+
+/* Floating Menu */
+/**************************/
+
+.floating-button {
+  position: absolute;
+  bottom: 0px;
+  right: 30px;
+  background: white;
+  width: 60px;
+  height: 36px;
+  border: none;
+  font-size: 28px;
+  color: #000;
+  cursor: pointer;
+  line-height: 36px;
+}
+
+.floating-button:focus {
+  outline: none;
+}
+
+.floating-button>.floating-button-arrow {
+  transform: rotate(90deg);
+}
+
+.floating-menu {
+  background: black;
+  position: fixed;
+  right: 10px;
+  top: 35%; 
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.floating-menu>ul{
+  list-style: none;
+  margin-right: 10px;
+  padding: 0 15px;
+}
+
+.floating-menu>ul>li{
+  margin: 18px 0; 
+}
+
+.floating-menu>ul>li.active{
+  text-decoration: underline;
+}
+
+.floating-menu>ul>li>a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.floating-menu>ul>li>a:hover {
+  font-weight: bold;
+}
+
+/* Section - Title */
+/**************************/
+
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {
+  background: white; 
+  padding: 40px 0px; 
+  width:100%; 
+  margin:0 auto; 
+  text-align:justify;
+}
+
+
+#portfolio {
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 84%;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-rows: 150px;
+  grid-gap: 1.5rem;
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.project {
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition:transform 0.3s ease-in-out;
+  -ms-transition:transform 0.3s ease-in-out;
+}
+
+.img-projects {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:all .5s ease-in-out;
+  filter: grayscale(100%);
+
+}
+
+.img-projects:hover {
+  filter: grayscale(0%);
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+}
+
+#one {
+  grid-column: span 1;
+}
+#two { 
+  grid-column: span 2;
+  grid-row: span 1;
+}
+#three {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+#four {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+#five {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#logo {
+  margin: 15px auto;
+}
+
+#parallax-world-of-ugg .aboutme .aboutme-img {
+  width: 40%;
+  float:left; margin: 45px;
+  padding:12px;
+}
+
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; 
+  background-image: url(../img/Untitled-41.jpg); 
+  background-attachment: fixed; 
+  background-size: cover; 
+  -moz-background-size: cover; 
+  -webkit-background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-container {
+    position: relative;
+    text-align: center;
+}
+
+#destello img {
+  width: 85px;
+  margin: 0 4px -30px 0;
+}
+
+#parallax-world-of-ugg .parallax-two {
+  padding: 300px 0;   
+  margin-left: 110px; 
+  background-image: url(../img/aboutme.jpeg); 
+  background-attachment: fixed; 
+  background-size: contain; 
+  -moz-background-size: contain; 
+  -webkit-background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center center;
+}
+
+#about {
+  min-height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+
+#parallax-world-of-ugg .contenido2 {
+ }
+
+/* Extras */
+/**************************/
+
+.line-break {
+  border-bottom: 2px solid #A6A300; 
+  width: 150px;
+  margin: 25px auto;
+}
+
+/* section: intro */
+/**************************/
+#service {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.habilidades-icon {
+  padding: 50px 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.habilidades-subtitle {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.habilidades-text {
+  text-align: left;
+  margin: 0px 15px;
+  max-width: 250px;
+}
+
+.Capa_1:hover{
+  fill:#A6A300;
+}
+
+.intro-me {   
+  padding: 60px 30%;
+  margin: 0 auto; 
+  text-align: left;
+}
+
+.intro-me h4 {
+  color: black; 
+  margin: 0; 
+  padding: 0 75px; 
+  font-family:'Oswald', sans-serif; 
+  font-size: 5em; 
+  font-weight:400; 
+  text-transform: uppercase; 
+  text-align: justify;
+}
+
+
+
+/* Footer */
+footer {
+    background: black;
+    color: #F5F4F8;
+    min-height: 200px;
+    margin: 0;
+    width: 100%;
+}
+
+footer p {
+    font-family: 'Oswald', cursive;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0;
+    
+}
+
+
+
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .contenido2 {margin-left: 0}
+
+  .intro-me {   
+    padding: 60px;
+    margin: 0 auto; 
+    text-align: left;
+  }
+  #about {
+    width: 100%;
+  }
+  .title-section{
+    left: 0px;
+    position: absolute;
+    width: 44%;
+    margin: 0;
+  }
+
+  .parallax-two {
+    margin-left: 0;
+  }
+
+  
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:40px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .contenido2 {padding-top:300px; padding-bottom:300px; margin-left: 0}
+  
+  .floating-menu {
+    opacity: 0 !important;
+  }
+  .intro-me {   
+  padding: 60px 20%;
+  margin: 0 auto; 
+  text-align: left;
+  }
+  #about {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .title-section{
+    left: 0;
+    position: absolute;
+    padding: 0 10px;
+    width: 50%;
+    margin: 0;
+  }
+
+  .about-me2{
+    display: none;
+  }
+}
+@media screen and (max-width: 610px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+  #destello img {
+    width: 66px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .intro-me {   
+  padding: 60px 10%;
+  margin: 0 auto; 
+  text-align: left;
+}
+  .intro-me h4 {
+  font-size: 3em; 
+}
+
+}
+
+@media all and (min-width: 320px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (min-width: 1024px) {
+  
+  #about {
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+

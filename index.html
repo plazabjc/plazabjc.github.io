@@ -1,181 +1,239 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Juan Plaza</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-
-
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Juan ⚡ Plaza</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
-    <header id="bio">            
-        <div class="particle-wraper">
-            <div id="particle-canvas"></div>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href='#habilidades'>
-                        Habilidades
-                    </a>
-                </li>
-                <li>
-                    <a href='#acerca-de'>
-                        Acerca de mi
-                    </a>
-                </li>
-                <li>
-                    <a href='#contacto'>
-                        Contacto
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header-content">
-            <img class="profile" src="img/profile.jpg" alt="foto de perfil" />
-            <div class="title-wrapper">
-                
-                <h1>Juan Plaza</h1>
-                <h2 class="primary-red">Desarrollador Web</h2>
+  <div id="parallax-world-of-ugg">  
+    <nav class="floating-menu" id='floating-menu'>
+      <ul>
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#intro">Intro</a>
+        </li>
+        <li>
+          <a href="#service">Servicios</a>
+        </li>
+        <li>
+          <a href="#portfolio">Proyectos</a>
+        </li>
+        <li>
+          <a href="#about">Sobre mi</a>
+        </li>
+      </ul>
+    </nav>
+    <section id='hero-section'>
+        <div class="parallax-one">
+          <div class="hero-container">
+            <h2>JUAN<span id="destello"><img src="img/destello.svg" alt="destello"></span>PLAZA</h2>
+            <p id="container-subtitle">DESARROLLADOR WEB</p>
+          </div>
+          <button class="floating-button" id='hero-scroll-button'>
+            <div class="floating-button-arrow">
+              &#10095;
             </div>
-            <div class="bio-content">
-                <p>Desarrollador web auto-didacta con experiencia en HTML, CSS, diseño web responsive y animaciones CSS3. 
-                </p>
-                <p>Me encuentro en constante aprendizaje con el objetivo de ampliar mis habilidades en desarrollo web y aseguramiento de calidad para mejores resultados en aplicaciones y experiencias. Actualmente estoy expandiendo mis conocimientos en tecnologías web con NextU y otras plataformas de aprendizaje en l&iacute;nea. 
-                </p> 
-
-                <p></p>
-            </div>
-        </div>
-    </header>
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <div class="container habilidades-grid">
-            <div class="col-3">
-                <div class="habilidad">
-                    <i class="fas fa-code"></i>
-                    <h5>HTML</h5>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="habilidad">
-                    <i class="fab fa-css3"></i>
-                    <div class="progress"></div>
-                    <h5>CSS</h5>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="habilidad">
-                    <i class="fas fa-search"></i>
-                    <h5>SEO</h5>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="habilidad" id="responsive">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h5>Diseño Responsive</h5>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="habilidad" id="animaciones">
-                    <i class="fas fa-spinner"></i>
-                    <h5>Animaciones CSS3</h5>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="habilidad">
-                    <i class="fas fa-user-astronaut"></i>
-                    <h5>UX/UI</h5>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="habilidad">
-                    <i class="fab fa-js"></i>
-                    <h5>JavaScript</h5>
-                </div>
-            </div>
+          </button>
         </div>
     </section>
-    <section id="acerca-de">
-        <h2>Acerca de mí</h2>
-        <div class="about-content">
-            <div class="clearfix">
-                <img src="img/about1.jpg" alt="" class="about-content-img" />
-                <p>Hola, mi nombre es Juan Plaza, soy estudiante, activista, bailarín y ahora: ¡Desarrolador web!</p>
-                <p>Nac&iacute; en M&eacute;rida, Venezuela y tengo 27 a&ntilde;os, actualmente estoy viviendo en Bogot&aacute;, Colombia.</p>
-                <p>Aunque me he dedicado a distintas actividades, desde promocionar Derechos Humanos hasta dar clases de Salsa Casino, me he interesado completamente en el increíble mundo web.</p>
-            </div>
-            <div class="clearfix" id="activities-content">
-                <img src="img/activismo.jpg" alt="Activismo" class="activities-img">
-                <p>Me he desempeñado como voluntario de AIESEC, dónde, a través de actividades en comunidades vulnerables, he desarrollado mi espíritu de liderazgo y emprendimiento.</p>
-                <p>También he participado en la promoción y defensa de Derechos Humanos junto a Amnistía Internacional Venezuela, particularmente a cargo del tema de Educación en Derechos Humanos y Libertad Académica. </p>
-                <p>Me apasiona el baile, especialmente los ritmos latinos, he participado en actos culturales y talleres como bailarín de Salsa Casino. 
-                </p>
-            </div>
-            <!-- <div class="clearfix">
-                <img src="img/about1.jpg" alt="" class="about-content-img" />
-                <p>Algunas de las actividades que disfruto:</p>
-                <ul>
-                    <li>Caminar a la montaña.</li>
-                    <li>Andar en bicicleta.</li>
-                    <li>Ver series.</li>
-                </ul>
-            </div> -->
+
+    <section id='intro'>
+      <div class="intro-me">
+        <h4>DERECHO,</h4> 
+        <h4>ACTIVISMO,</h4>
+        <h4>DISEÑO Y</h4>
+        <h4>¡DESARROLLO WEB!</h4>
+      </div>
+      <p class="line-break margin-top-10"></p>
+    </section>
+
+    <section id="service">
+      <h5 class="title">Servicios</h3>
+      <div id="habilidades2">
+        <div class="habilidades-icon">
+          <svg  version="1.1" class="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve" width="80px">
+          <g>
+            <g>
+              <rect x="232" y="400" width="16" height="16"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path d="M472,416h-8V128c0-17.673-14.327-32-32-32h-48V32c0-17.673-14.327-32-32-32H128c-17.673,0-32,14.327-32,32v64H48
+                c-17.673,0-32,14.327-32,32v288H8c-4.418,0-8,3.582-8,8v24c0,17.673,14.327,32,32,32h416c17.673,0,32-14.327,32-32v-24
+                C480,419.582,476.418,416,472,416z M112,32c0-8.837,7.163-16,16-16h224c8.837,0,16,7.163,16,16v32H112V32z M112,80h256v232
+                c0,8.837-7.163,16-16,16H128c-8.837,0-16-7.163-16-16V80z M128,344h224c17.673,0,32-14.327,32-32V144h32v224H64V144h32v168
+                C96,329.673,110.327,344,128,344z M32,128c0-8.837,7.163-16,16-16h48v16H56c-4.418,0-8,3.582-8,8v240c0,4.418,3.582,8,8,8h368
+                c4.418,0,8-3.582,8-8V136c0-4.418-3.582-8-8-8h-40v-16h48c8.837,0,16,7.163,16,16v288H312c-2.12-0.002-4.155,0.839-5.656,2.336
+                L292.688,432H187.312l-13.656-13.664c-1.501-1.497-3.536-2.338-5.656-2.336H32V128z M464,448c0,8.837-7.163,16-16,16H32
+                c-8.837,0-16-7.163-16-16v-16h148.688l13.656,13.656c1.5,1.5,3.534,2.344,5.656,2.344h112c2.122,0,4.156-0.844,5.656-2.344
+                L315.312,432H464V448z"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect x="136" y="256" width="208" height="16"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect x="136" y="288" width="192" height="16"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect x="184" y="224" width="160" height="16"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect x="128" y="32" width="16" height="16"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect x="160" y="32" width="16" height="16"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect x="192" y="32" width="16" height="16"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect x="152" y="224" width="16" height="16"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path d="M212.8,134.4l-9.6-12.8l-32,24c-3.535,2.651-4.251,7.665-1.6,11.2c0.455,0.606,0.994,1.145,1.6,1.6l32,24l9.6-12.8
+                L189.336,152L212.8,134.4z"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path d="M310.4,147.2c-0.455-0.606-0.994-1.145-1.6-1.6l-32-24l-9.6,12.8l23.464,17.6L267.2,169.6l9.6,12.8l32-24
+                C312.335,155.749,313.051,150.735,310.4,147.2z"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect x="196.925" y="144" transform="matrix(0.3715 -0.9284 0.9284 0.3715 9.7248 318.3653)" width="86.16" height="16"/>
+            </g>
+          </g>
+          </svg>
+          <h5 class="habilidades-subtitle">Desarrollo web</h5>
+          <p class="habilidades-text">Mi principal objetivo es construir y mantener sitios web con una impecable apariencia, óptimo desempeño y excelente funcionamiento, siempre considerando las necesidades del cliente.</p>
         </div>
 
- 
+        <div class="habilidades-icon">
+          <svg class="Capa_1" width= "80px" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg"><g id="Layer_22" data-name="Layer 22"><path d="m58 1h-38a5 5 0 0 0 -5 5v3h-9a5 5 0 0 0 -5 5v30a5 5 0 0 0 5 5h14v6h-2a5 5 0 0 0 -5 5v2a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1v-2a5 5 0 0 0 -5-5h-2v-6h14a5 5 0 0 0 5-5v-7h5a5 5 0 0 0 5-5v-26a5 5 0 0 0 -5-5zm-38 2h38a3 3 0 0 1 3 3v1h-44v-1a3 3 0 0 1 3-3zm19 57v1h-24v-1a3 3 0 0 1 3-3h18a3 3 0 0 1 3 3zm-7-5h-10v-6h10zm16-8h-42a3 3 0 0 1 -3-3v-3h48v3a3 3 0 0 1 -3 3zm3-8h-48v-25a3 3 0 0 1 3-3h9v21a5 5 0 0 0 5 5h31zm7-4h-38a3 3 0 0 1 -3-3v-23h44v23a3 3 0 0 1 -3 3z"/><path d="m47 43h2v2h-2z"/><path d="m43 43h2v2h-2z"/><path d="m39 43h2v2h-2z"/><path d="m58 11h-38a1 1 0 0 0 -1 1v20a1 1 0 0 0 1 1h38a1 1 0 0 0 1-1v-20a1 1 0 0 0 -1-1zm-31 18h4v-2h-4v-2h2v-2h-2v-2h2v-2h-2v-2h6v14h-6zm15.11-6.17a1.7 1.7 0 0 1 -.73.17h-.76a1.7 1.7 0 0 1 -.73-.17 1.61 1.61 0 0 1 -.89-1.45 1.22 1.22 0 0 1 .68-1.1 2.39 2.39 0 0 0 1.32-1.88l1.33 1.33a2.32 2.32 0 0 1 .67 1.65 1.61 1.61 0 0 1 -.89 1.45zm-2.11 2.1a4.2 4.2 0 0 0 .62.07h.76a4.2 4.2 0 0 0 .62-.07v6.07h-2zm9-1.93h2v8h-2zm.39-2 .61-1.84.61 1.84zm7.61 10h-4v-9a1.19 1.19 0 0 0 0-.32l-2-6a1 1 0 0 0 -1.9 0l-2 6a1.19 1.19 0 0 0 -.1.32v9h-3v-7.13a3.59 3.59 0 0 0 1-2.49 4.27 4.27 0 0 0 -1.27-3.06l-3-3a1 1 0 0 0 -1.09-.21 1 1 0 0 0 -.64.89v2.15a.39.39 0 0 1 -.21.34 3.22 3.22 0 0 0 -1.79 2.89 3.59 3.59 0 0 0 1 2.49v7.13h-3v-15a1 1 0 0 0 -1-1h-8a1 1 0 0 0 -1 1v15h-4v-18h36z"/></g></svg>
+          <h5 class="habilidades-subtitle">Diseño web</h5>
+          <p class="habilidades-text">Un sitio web es la presentación de una empresa al mundo, siendo el encargado de las primeras buenas impresiones. Planifico y diseño cada sitio buscando la correcta visualización en distintos dispositivos.</p>
+        </div>
+
+        <div class="habilidades-icon">
+          <svg version="1.1" class="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve" width= "80px">
+          <g>
+            <g>
+              <path d="M472,120h-48V8c0-4.424-3.576-8-8-8H8C3.576,0,0,3.576,0,8v352c0,4.424,3.576,8,8,8h72v53.264L63.088,433.2
+                c-10.128,7.152-12.672,20.832-5.8,31.16c4.36,6.528,11.608,10.088,18.976,10.088c1.384,0,2.768-0.176,4.144-0.432
+                C81.32,477.432,84.296,480,88,480h352c22.056,0,40-17.944,40-40V128C480,123.576,476.424,120,472,120z M16,16h392v48H16V16z
+                 M16,352V80h392v40H88c-4.424,0-8,3.576-8,8v224H16z M79.84,457.4c-3.072,1.976-7.208,1.128-9.24-1.912
+                c-2.032-3.056-1.28-7.104,1.72-9.208L188.888,364c3,5.688,6.504,11.048,10.4,16.112L79.84,457.4z M192,312
+                c0-52.936,43.064-96,96-96c52.936,0,96,43.064,96,96c0,52.936-43.064,96-96,96C235.064,408,192,364.936,192,312z M464,440
+                c0,13.232-10.768,24-24,24H99.096l110.92-71.776C230.2,411.848,257.688,424,288,424c61.76,0,112-50.24,112-112s-50.24-112-112-112
+                s-112,50.24-112,112c0,12.968,2.328,25.376,6.4,36.976L96,409.968V184h368V440z M464,168H96v-32h368V168z"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path d="M344.424,261.464L319.68,335.68l-24.16-66.424c-1.192-3.296-4.304-5.52-7.928-5.256c-3.512,0.184-6.496,2.64-7.344,6.056
+                l-11.928,47.688L254.4,299.2c-1.488-1.984-3.8-3.168-6.272-3.2c-2.448-0.232-4.832,1.072-6.376,3l-32,40l12.496,10l25.552-31.936
+                l17.8,23.736c1.84,2.472,4.92,3.616,7.984,3.048c3.024-0.608,5.432-2.904,6.168-5.904l9.664-38.624l23.064,63.424
+                c1.152,3.152,4.16,5.256,7.52,5.256c0.04,0,0.072,0,0.112,0c3.4-0.048,6.408-2.24,7.48-5.472l32-96L344.424,261.464z"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect x="32" y="32" width="16" height="16"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect x="64" y="32" width="16" height="16"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect x="96" y="32" width="16" height="16"/>
+            </g>
+          </g>
+          </svg>
+          <h5 class="habilidades-subtitle">SEO</h5>
+          <p class="habilidades-text">Es el proceso de mejorar la visibilidad de un sitio web en los motores de búsqueda mediante buenas prácticas, el resultado es un mayor número de visitas.</p>
+        </div>
+
+        <div class="habilidades-icon">
+          <svg class="Capa_1" width= "80px" viewBox="0 0 496 496" xmlns="http://www.w3.org/2000/svg"><path d="m89.632812 300.023438-17.632812-26.449219-17.632812 26.449219-6.445313-45.160157-15.84375 2.273438 8.984375 62.863281h19.21875l11.71875-17.574219 11.71875 17.574219h19.21875l8.984375-62.863281-15.84375-2.273438zm0 0"/><path d="m185.632812 300.023438-17.632812-26.449219-17.632812 26.449219-6.445313-45.160157-15.84375 2.273438 8.984375 62.863281h19.21875l11.71875-17.574219 11.71875 17.574219h19.21875l8.984375-62.863281-15.84375-2.273438zm0 0"/><path d="m281.632812 300.023438-17.632812-26.449219-17.632812 26.449219-6.445313-45.160157-15.84375 2.273438 8.984375 62.863281h19.21875l11.71875-17.574219 11.71875 17.574219h19.21875l8.984375-62.863281-15.84375-2.273438zm0 0"/><path d="m440 273.855469v-9.855469c0-13.230469-10.769531-24-24-24v-20.625c0-8.488281 5.089844-15.992188 12.960938-19.144531l44.015624-17.605469c13.984376-5.59375 23.023438-18.9375 23.023438-34 0-20.191406-16.433594-36.625-36.625-36.625h-171.78125c-4.144531-62.441406-56.121094-112-119.59375-112-66.167969 0-120 53.832031-120 120 0 44.464844 24.359375 83.273438 60.382812 104h-84.382812c-13.230469 0-24 10.769531-24 24v80c0 13.230469 10.769531 24 24 24h288c2.816406 0 5.488281-.574219 8-1.472656v57.472656c0 48.519531 39.480469 88 88 88s88-39.480469 88-88v-64c0-34.199219-23.984375-62.839844-56-70.144531zm-16-9.855469v8h-32v-8c0-4.414062 3.585938-8 8-8h16c4.414062 0 8 3.585938 8 8zm-8 80v32c0 4.414062-3.585938 8-8 8s-8-3.585938-8-8v-32c0-4.414062 3.585938-8 8-8s8 3.585938 8 8zm-16-22.527344c-9.289062 3.3125-16 12.113282-16 22.527344v8h-48v-8c0-30.871094 25.128906-56 56-56h8zm80-172.847656c0 8.488281-5.089844 15.992188-12.960938 19.144531l-44.015624 17.605469c-13.984376 5.59375-23.023438 18.9375-23.023438 34v20.625c-13.230469 0-24 10.769531-24 24v9.855469c-16.015625 3.648437-30.007812 12.625-40 24.992187v-50.847656c0-13.230469-10.769531-24-24-24h-84.382812c33.832031-19.472656 57.246093-54.910156 59.984374-96h171.78125c11.371094 0 20.617188 9.246094 20.617188 20.625zm-208-28.625c0 20.121094-5.839844 38.863281-15.777344 54.800781l-22-13.199219c-6.3125-3.777343-10.222656-10.707031-10.222656-18.058593 0-7.054688 3.503906-13.597657 9.375-17.511719l4.105469-2.734375c6.582031-4.394531 10.519531-11.746094 10.519531-19.664063 0-4.207031 3.425781-7.632812 7.632812-7.632812h13.457032c1.839844 7.71875 2.910156 15.726562 2.910156 24zm-8.023438-40h-8.34375c-13.03125 0-23.632812 10.601562-23.632812 23.632812 0 2.558594-1.265625 4.925782-3.398438 6.351563l-4.105468 2.734375c-10.328125 6.890625-16.496094 18.417969-16.496094 30.824219 0 12.945312 6.894531 25.128906 17.992188 31.777343l20.726562 12.441407c-12.34375 14.316406-28.472656 25.253906-46.855469 31.199219-.679687-10.296876-7.429687-19.242188-17.335937-22.546876-3.902344-1.300781-6.527344-4.941406-6.527344-9.0625v-7.222656c0-9.535156-3.152344-18.992187-8.871094-26.625-12.015625-16.03125-33.417968-22-51.976562-14.574218l-7.625 3.046874c-3.359375 1.34375-6.902344 2.023438-10.535156 2.023438h-30.089844c-1.230469-5.199219-2.078125-10.535156-2.503906-16h21.707031c14.078125 0 26.742187-7.832031 33.046875-20.425781 3.574218-7.132813 10.75-11.574219 18.734375-11.574219h7.417969c12.519531 0 22.695312-10.175781 22.695312-23.183594 0-9.28125 7.503906-16.816406 16.71875-16.816406 12.832031 0 23.28125-10.449219 23.28125-23.28125v-8.695312c25.222656 10.550781 45.425781 30.753906 55.976562 55.976562zm-95.976562-64c8.273438 0 16.28125 1.070312 24 2.902344v13.816406c0 4.015625-3.265625 7.28125-7.28125 7.28125-18.039062 0-32.71875 14.71875-32.71875 33.3125 0 3.6875-3 6.6875-6.695312 6.6875h-7.417969c-14.078125 0-26.742188 7.832031-33.046875 20.425781-3.566406 7.132813-10.742188 11.574219-18.726563 11.574219h-21.707031c4.113281-53.609375 48.953125-96 103.59375-96zm-95.976562 144h24.96875c5.679687 0 11.222656-1.070312 16.480468-3.167969l7.617188-3.046875c11.902344-4.761718 25.550781-.929687 33.238281 9.3125 3.65625 4.878906 5.671875 10.925782 5.671875 17.03125v7.222656c0 11.007813 7.023438 20.753907 17.472656 24.234376 3.902344 1.300781 6.527344 4.941406 6.527344 9.0625v1.992187c-5.230469.808594-10.542969 1.359375-16 1.359375-43.175781 0-80.273438-26.457031-95.976562-64zm239.976562 176h-288c-4.414062 0-8-3.585938-8-8v-80c0-4.414062 3.585938-8 8-8h288c4.414062 0 8 3.585938 8 8v80c0 4.414062-3.585938 8-8 8zm74.847656 140.816406c4.074219-7.671875 12.113282-12.816406 21.152344-12.816406 9.03125 0 17.070312 5.144531 21.152344 12.816406-6.695313 2.0625-13.792969 3.183594-21.152344 3.183594s-14.457031-1.121094-21.152344-3.183594zm56.914063-6.410156c-6.617188-13.367188-20.3125-22.40625-35.761719-22.40625-15.457031 0-29.152344 9.03125-35.761719 22.40625-21.613281-12.4375-36.238281-35.726562-36.238281-62.40625v-40h48v8c0 13.230469 10.769531 24 24 24s24-10.769531 24-24v-8h48v40c0 26.679688-14.625 49.96875-36.238281 62.40625zm36.238281-118.40625h-48v-8c0-10.414062-6.710938-19.214844-16-22.527344v-33.472656h8c30.871094 0 56 25.128906 56 56zm0 0"/></svg>
+          <h5 class="habilidades-subtitle">Hosting y Dominio</h5>
+          <p class="habilidades-text">El hosting es un servicio en línea que permite comprar espacio en algún servidor para publicar el sitio web. El dominio es la dirección del sitio web que los usuarios ingresan en la barra de direcciones cuando quieren visitarlo.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form class="form">
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" />
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" />
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea type="text" name="message" id="message" rows="6"></textarea>
-            </div>
-            <div class="form-group">
-                <button>Enviar  <i class="fas fa-arrow-alt-circle-right fa-lg"></i></button>
-            </div>
-        </form>
-        <a href="doc/CV-JC-eng.pdf" target="_blank" id="download-cv"><i class="fas fa-file-download" ></i> Descargar curriculum</a>
+      <p class="line-break margin-top-10"></p>
     </section>
+
+    <section id='portfolio'>
+      <h5 class="title">Proyectos</h5>
+      <div class="wrapper">
+        <div class="project" id='one'>
+          <a href="https://www.masonryandconcrete.us/" target="_blank">
+            <img class="img-projects" src="img/MCservices.png" alt="">
+          </a>
+        </div>
+        <div class="project" id='two'>
+          <a href="https://rvsservice.com/" target="_blank">
+            <img class="img-projects" src="img/RVS.png" alt="">
+          </a>
+        </div>
+        <div class="project" id='three'>
+          <a href="https://www.behance.net/gallery/80230437/Diseno-Centrado-en-Perfiles-Humanos" target="_blank">
+            <img class="img-projects" src="img/Perfileshumanos.png" alt="">
+          </a>
+        </div>
+        <div class="project" id='four'>
+          <a href="https://www.masonryandconcrete.us/" target="_blank">
+            <img class="img-projects" src="img/MCservices.png" alt="">
+          </a>
+        </div>
+        <div class="project" id='five'>
+          <a href="https://rvsservice.com/" target="_blank">
+            <img class="img-projects" src="img/RVS.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id='about'>
+      <h5 class="title">Acerca de mí</h5>
+      <div class="parallax-two">
+        <div class="title-section">
+          <p class="about-me">Soy un <span class="letter-yellow"> desarrollador web</span> que ayuda a las personas en el <span class="letter-yellow"> diseño UX/UI</span> y <span class="letter-yellow">posicionamiento SEO</span>.</p>
+          <p class="about-me2">Crecí en Mérida - Venezuela, actualmente estoy viviendo en Bogotá - Colombia. Estudié Derecho en la Universidad de los Andes de Venezuela pero terminé interesando en el increible mundo web.</p>
+        </div>
+      </div>
+    </section>
+
     <footer id="footer">
-
-
-        <div class="container">
-            <ul>
-                <li><a href="https://github.com/plazabjc" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/plazabjc/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="mailto:plazabjc@gmail.com"><i class="fas fa-envelope"></i></a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=573214083638" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-
-            </ul>
-        </div>
-        <p>Juan Plaza 2018 | All rights reserved</p>
+      <p>Juan Plaza 2018 | All rights reserved</p>
     </footer>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
-        crossorigin="anonymous">
-    
-    <script src="js/particles.js"></script>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" type="text/javascript"></script>
+  <script src="js/js.js" type="text/javascript"></script>
 </body>
-
 </html>
