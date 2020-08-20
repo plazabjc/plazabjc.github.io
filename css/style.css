@@ -307,6 +307,7 @@ body {
 }
 
 #parallax-world-of-ugg .parallax-two {
+  position: relative;
   padding: 300px 0;   
   margin-left: 110px; 
   background-image: url(../img/aboutme.jpeg); 
@@ -423,7 +424,7 @@ footer p {
   }
 
   #parallax-world-of-ugg .parallax-two {
-    padding: 372px 0;
+    padding: 200px 0;
   }
 
   .intro-me {   
@@ -453,7 +454,8 @@ footer p {
   }
 
   #parallax-world-of-ugg h2 {
-    font-size:40px;
+    font-size:24px;
+    letter-spacing: 6px;
   }
   #parallax-world-of-ugg .block {
     padding: 30px;
@@ -462,7 +464,7 @@ footer p {
     margin-left: 0
   }
   #parallax-world-of-ugg .parallax-two {
-    padding: 372px 0;
+    padding: 200px 0;
   }
 
   .floating-menu {
@@ -489,9 +491,8 @@ footer p {
   }
 
   .habilidades-text {
-    text-align: left;
+    text-align: center;
     margin: 0px 15px;
-    max-width: 100%;
 
   }
 
@@ -511,25 +512,37 @@ footer p {
   }
 
   #destello img {
-    width: 66px;
+    width: 35px;
+    margin: 0 4px -16px 0;
+  }
+
+  #container-subtitle {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin: 5px auto;
   }
 
   .title {
     font-size: 34px;
+    margin: 60px 0 20px 0;
   }
 
   .intro-me {   
-  padding: 60px 10%;
+  padding: 60px 6%;
   margin: 0 auto; 
   text-align: left;
-}
-  .intro-me h4 {
-  font-size: 3em; 
-}
-
-  
-    
   }
+  .intro-me h4 {
+    font-size: 3em; 
+  }
+  .habilidades-icon {
+    padding: 30px 0;
+  }
+
+  footer {
+    min-height: 58px;
+  }
+}
 
 
 
@@ -594,7 +607,7 @@ footer p {
 
 }*/
 
-/*@media all and (min-width: 320px) {
+@media all and (min-width: 320px) {
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -615,5 +628,5 @@ footer p {
     grid-template-columns: repeat(6, 1fr);
   }
 }
-*/
+
 
