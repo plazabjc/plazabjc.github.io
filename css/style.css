@@ -9,9 +9,7 @@ body {
 }
 
 /* Override UGG site */
-#main {width: 100%; padding:0;}
-.content-asset p {margin:0 auto;}
-.breadcrumb {display:none;}
+/*`*/
 
 .parallax-world-of-ugg {
   position: relative;
@@ -68,7 +66,7 @@ body {
   z-index: 10;
   text-align: center;
   color: black;
-  margin: 60px;
+  margin: 60px 0 100px 0;
 }
 
 
@@ -321,7 +319,7 @@ body {
 }
 
 #about {
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   width: 80%;
   margin: auto;
 }
@@ -346,6 +344,7 @@ body {
 }
 
 .habilidades-icon {
+  vertical-align: top;
   padding: 50px 0;
   display: inline-block;
   text-align: center;
@@ -412,45 +411,70 @@ footer p {
 
 /* Media Queries */
 /**************************/
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
-  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .contenido2 {margin-left: 0}
+@media screen and (max-width: 900px) {
+  #parallax-world-of-ugg .block {
+    padding: 40px;
+    width:620px;
+  }
+  #parallax-world-of-ugg .parallax-one,
+  #parallax-world-of-ugg .parallax-two,
+  #parallax-world-of-ugg .contenido2 {
+    margin-left: 0;
+  }
+
+  #parallax-world-of-ugg .parallax-two {
+    padding: 372px 0;
+  }
 
   .intro-me {   
     padding: 60px;
     margin: 0 auto; 
     text-align: left;
   }
+
   #about {
     width: 100%;
+    height: auto;
   }
+
   .title-section{
     left: 0px;
     position: absolute;
     width: 44%;
     margin: 0;
   }
+}
 
-  .parallax-two {
-    margin-left: 0;
+@media screen and (max-width: 770px) {
+
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+    width:420px;
   }
 
-  
-}
-@media screen and (max-width: 767px) {
-  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
-  #parallax-world-of-ugg h2 {font-size:40px;}
-  #parallax-world-of-ugg .block {padding: 30px;}
-  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .contenido2 {padding-top:300px; padding-bottom:300px; margin-left: 0}
-  
+  #parallax-world-of-ugg h2 {
+    font-size:40px;
+  }
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+  }
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .contenido2 {
+    margin-left: 0
+  }
+  #parallax-world-of-ugg .parallax-two {
+    padding: 372px 0;
+  }
+
   .floating-menu {
     opacity: 0 !important;
   }
+
   .intro-me {   
-  padding: 60px 20%;
-  margin: 0 auto; 
-  text-align: left;
+    padding: 60px 20%;
+    margin: 0 auto; 
+    text-align: left;
   }
+
   #about {
     width: 100%;
     margin: 0;
@@ -464,11 +488,90 @@ footer p {
     margin: 0;
   }
 
+  .habilidades-text {
+    text-align: left;
+    margin: 0px 15px;
+    max-width: 100%;
+
+  }
+
   .about-me2{
     display: none;
   }
+
+
+   
 }
-@media screen and (max-width: 610px) {
+
+@media screen and (max-width: 620px) {
+
+  #parallax-world-of-ugg .block {
+    padding: 30px 15px;
+    width:290px;
+  }
+
+  #destello img {
+    width: 66px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .intro-me {   
+  padding: 60px 10%;
+  margin: 0 auto; 
+  text-align: left;
+}
+  .intro-me h4 {
+  font-size: 3em; 
+}
+
+  
+    
+  }
+
+
+
+/*@media all and (max-width: 1024px) and (min-width: 768px) {
+  
+  
+  }
+
+  
+}
+@media screen and (max-width: 767px) {
+  
+
+  #portfolio {
+  min-height: 50vh;
+}
+
+
+
+
+
+  .floating-menu {
+    opacity: 0 !important;
+  }
+  
+
+  .habilidades-icon {
+    display: block;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .habilidades-subtitle {
+    font-size: 2em;
+  }
+  .habilidades-text {
+    display: none;
+  }
+  
+
+  
+}
+@media all and (max-width: 610px) {
   #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
   #destello img {
     width: 66px;
@@ -487,9 +590,11 @@ footer p {
   font-size: 3em; 
 }
 
-}
 
-@media all and (min-width: 320px) {
+
+}*/
+
+/*@media all and (min-width: 320px) {
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -510,5 +615,5 @@ footer p {
     grid-template-columns: repeat(6, 1fr);
   }
 }
-
+*/
 
