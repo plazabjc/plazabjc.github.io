@@ -71,12 +71,11 @@ body {
 
 
 .title-section {
-  left: 90px;
   background: rgba(0, 0, 0, 0.85);
   position: absolute;
   padding: 0 10px;
   z-index: 10;
-  width: 31%;
+  width: 380px;
   margin: 110px 15px 15px 15px;
 }
 
@@ -412,6 +411,10 @@ footer p {
 
 /* Media Queries */
 /**************************/
+
+@media screen and (max-width: 900px){
+  
+}
 @media screen and (max-width: 900px) {
   #parallax-world-of-ugg .block {
     padding: 40px;
