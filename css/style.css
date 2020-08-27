@@ -246,7 +246,8 @@ body {
 }
 
 #one {
-  grid-column: span 1;
+  grid-column: span 2;
+  grid-row: span 1;
 }
 #two { 
   grid-column: span 2;
@@ -391,19 +392,18 @@ body {
 footer {
     background: black;
     color: #F5F4F8;
-    min-height: 200px;
+    min-height: 80px;
     margin: 0;
     width: 100%;
 }
 
 footer p {
-    font-family: 'Oswald', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     position: relative;
     text-align: center;
-    padding-bottom: 10px;
-    margin: 0;
-    
+    padding: 10px;
+    margin: 0; 
 }
 
 
@@ -413,7 +413,7 @@ footer p {
 /**************************/
 
 @media screen and (max-width: 900px){
-  
+
 }
 @media screen and (max-width: 900px) {
   #parallax-world-of-ugg .block {
