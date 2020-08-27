@@ -182,7 +182,6 @@ body {
 }
 
 .floating-menu>ul>li.active{
-  text-decoration: underline;
 }
 
 .floating-menu>ul>li>a {
